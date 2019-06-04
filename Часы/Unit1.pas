@@ -56,8 +56,6 @@ end;
 procedure DrawDial(Bitmap : TBitmap; SizeClock, BorderClock : Integer);
 var Arrow: Integer;
 begin
-  Bitmap.Height := (SizeClock + BorderClock) * 2;
-  Bitmap.Width := (SizeClock + BorderClock) * 2;
   Bitmap.Canvas.Ellipse(0 + BorderClock, 0 + BorderClock, SizeClock *2 + BorderClock, SizeClock *2 + BorderClock);
   for Arrow := 1 to 60 do
     DrawLine(Bitmap, Arrow * Pi / 30, SizeClock, SizeClock, BorderClock, clBlack);
