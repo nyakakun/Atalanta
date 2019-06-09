@@ -1,25 +1,28 @@
 object Form1: TForm1
-  Left = 635
-  Top = 225
+  Left = 607
+  Top = 280
   BorderStyle = bsNone
-  ClientHeight = 420
-  ClientWidth = 420
-  Color = clBtnFace
+  ClientHeight = 1000
+  ClientWidth = 200
+  Color = clMedGray
+  TransparentColor = True
+  TransparentColorValue = clMedGray
+  Constraints.MaxHeight = 1039
+  Constraints.MaxWidth = 1016
+  Constraints.MinHeight = 239
+  Constraints.MinWidth = 216
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
   OnMouseDown = FormMouseDown
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
-    Left = 8
-    Top = 8
-    Width = 3
-    Height = 13
-  end
   object Timer1: TTimer
     Interval = 1
     OnTimer = Timer1Timer
